@@ -1,0 +1,107 @@
+/*NEW VISON PAGE*/
+.site-new{
+    background-image: url("../../images/icons/simple-circle.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: calc(50% + 300px)  calc(50% - 400px);
+}
+.vision{
+    margin-top: 50px;
+}
+.vision__inner{
+    margin: 0 auto;
+    text-align: center;
+    max-width: 400px;
+}
+.vison__title{
+    margin: 0 auto;
+    max-width: 375px;
+    font-family: 'DM Serif Display';
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 36px;
+    letter-spacing: -0.246154px;
+    color: #36536B;
+}
+.vision__text-box{
+    margin-top: 40px;
+}
+.vision__new-title{
+    font-family: 'DM Serif Display';
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 32px;
+    letter-spacing: -0.184615px;
+    color: #36536B;
+}
+.vision__text{
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 28px;
+    color: #6C8294;
+}
+@include mobile-first (724px){
+    .site-new{
+        background-image: url("../images/icons/simple-circle.svg");
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position: calc(50% + 450px)  calc(50% - 500px);
+    }
+    .vision{
+        margin-top: 80px;
+    }
+    .vision__inner{
+        margin: 0 auto;
+        text-align: center;
+        max-width: 100%;
+    }
+    .vison__title{
+        margin: 0 auto;
+        max-width: 570px;
+        font-family: 'DM Serif Display';
+        font-weight: 400;
+        font-size: 48px;
+        line-height: 56px;
+        letter-spacing: -0.246154px;
+        color: #36536B;
+    }
+    .vision__text-box{
+        margin-top: 40px;
+        display: flex;
+        justify-content: space-between;
+    }
+    .vision__new-title{
+        font-family: 'DM Serif Display';
+        font-weight: 400;
+        font-size: 32px;
+        line-height: 40px;
+        letter-spacing: -0.184615px;
+        color: #36536B;
+    }
+    .vision__text{
+        max-width: 456px;
+        text-align: left;
+        font-weight: 400;
+        font-size: 15px;
+        line-height: 28px;
+        color: #6C8294;
+    }
+}
+@include mobile-first (1000px){
+    .vision__inner{
+        margin: 0 auto;
+        text-align: center;
+        max-width: 900px;
+    }
+    .vison__title{
+        margin: 0;
+        text-align: left;
+        max-width: 570px;
+        font-family: 'DM Serif Display';
+        font-weight: 400;
+        font-size: 48px;
+        line-height: 56px;
+        letter-spacing: -0.246154px;
+        color: #36536B;
+    }
+}
