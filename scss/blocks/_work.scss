@@ -1,0 +1,129 @@
+/*work*/
+.work{
+    background: #1B262F;  
+}
+.work__inner{
+    text-align: center;
+}
+.work__list{
+    margin: 0 auto;
+    list-style: none;
+    max-width: 400px;
+    padding-top: 40px;
+    padding-right: 30px;
+    padding-bottom: 60px;
+    padding-left: 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    
+}
+.work__item{
+    padding-top: 44px;
+}
+
+.work__link{
+    
+}
+.work__img{
+    
+}
+.work__text-box{
+    margin-right: auto;
+    margin-left: auto;
+    padding-right: 20px;
+    padding-left: 20px;
+    max-width: 327px;
+}
+.work__title{
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 36px;
+    letter-spacing: -0.246154px;
+    color: #FBFCFE;
+    
+}
+.work__text{
+    padding-bottom: 60px;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 28px;
+    color: #FBFCFE;
+    opacity: 0.7;
+}
+.work__link-bt{
+    display: inline-block;
+    margin-bottom: 88px;
+    padding: 15px 32px;
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 15px;
+    line-height: 18px;
+    letter-spacing: -0.115385px;
+    color: #FBFCFE;
+    border: 1px solid #FBFCFE;
+    border-radius: 24px;
+    transition: 0.5s;
+
+    &:hover{
+        color: #1B262F;
+        background-color: #FBFCFE;
+    }
+}
+
+@include desktop-first(396px){
+    .work__list{
+        flex-direction: column;
+    }
+}
+@include mobile-first(724px){
+    .work__list{
+        margin: 0 auto;
+        list-style: none;
+        max-width: 600px;
+        padding-top: 40px;
+        padding-right: 30px;
+        padding-bottom: 60px;
+        padding-left: 30px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+    .work__text-box{
+        max-width: 480px;
+    }
+    .work__title{
+        font-size: 48px;
+        line-height: 56px;
+    }
+}
+@include mobile-first(1000px){
+    .work__inner{
+        text-align: left;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex-direction: row-reverse;
+    }
+    .work__list{
+        margin: 0 auto;
+        list-style: none;
+        max-width: 600px;
+        padding-top: 40px;
+        padding-right: 30px;
+        padding-bottom: 60px;
+        padding-left: 30px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+    .work__item{
+        
+    }
+    .work__text-box{
+        padding-top: 100px;
+    }
+}

@@ -1,0 +1,75 @@
+/*pay*/
+.pay{
+    
+}
+.pay__inner{
+    
+}
+.pay__list{
+    padding-top: 60px;
+    @include ul-unstiled;
+    
+}
+.pay__item{
+    margin: 0 auto;
+    max-width: 328px;
+    text-align: center;
+    
+    &:first-child::before{
+        margin-top: 50px;
+        content: "";
+        display: block;
+        padding-top: 160px;
+        background-image: url("../images/icons/personal-finance.svg");
+        background-repeat: no-repeat;
+        background-size: 106px;
+        background-position: calc(50%) calc(50% - 25px);
+    }
+    
+    &:nth-child(2)::before{
+        margin-top: 50px;
+        content: "";
+        display: block;
+        padding-top: 160px;
+        background-image: url("../images/icons/banking-coverage.svg");
+        background-repeat: no-repeat;
+        background-size: 106px;
+        background-position: calc(50%) calc(50% - 25px);
+    }
+    
+    &:last-child::before{
+        margin-top: 50px;
+        content: "";
+        display: block;
+        padding-top: 160px;
+        background-image: url("../images/icons/consumer-payments.svg");
+        background-repeat: no-repeat;
+        background-size: 106px;
+        background-position: calc(50%) calc(50% - 25px);
+    }
+    
+}
+
+.pay__title{
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 25px;
+    letter-spacing: -0.138462px;
+    color: #36536B;
+}
+.pay__text{
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 25px;
+    letter-spacing: -0.115385px;
+    color: #6C8294;
+}
+@include mobile-first (724px){
+    .pay__list{
+        display: flex;
+    }
+    .pay__item:nth-child(2){
+        margin-right: 10px;
+        margin-left: 10px;
+    }
+}

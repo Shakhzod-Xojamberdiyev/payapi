@@ -1,0 +1,80 @@
+/*easy*/
+
+.easy{
+    margin-top: 60px;
+}
+.easy__inner{
+    
+}
+.easy__wrap{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.easy__img{
+    padding-left: 30px;
+    margin: 0 auto;
+    max-width: 328px;
+}
+.easy__text-box{
+    text-align: center;
+    max-width: 573px;
+}
+.easy__title{
+    font-family: 'DM Serif Display';
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 36px;
+    letter-spacing: -0.276923px;
+    color: #36536B;
+    
+}
+.easy__text{
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 28px;
+    color: #6C8294;
+}
+@include mobile-first (724px){
+    .easy__title{
+        font-size: 48px;
+        line-height: 56px;
+    }
+    .easy__img{
+        max-width: 490px;
+    }
+}
+
+@include mobile-first (1000px){
+    .easy__wrap{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .easy__wrap:last-child{
+        background-image: url("../images/icons/simple-circle.svg");
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position: calc(50% + 500px);
+        margin-left: 100px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex-direction: row-reverse;
+    }
+    .easy__wrap:last-child .easy__img{
+        padding-left: 150px;
+    }
+    
+    .easy__img{
+        margin-left: 0;
+        padding-left: 0;
+        margin-top: 50px;
+        max-width: 800px;
+    }
+    .easy__text-box{
+        max-width: 400px;
+        text-align: left;
+    }
+}

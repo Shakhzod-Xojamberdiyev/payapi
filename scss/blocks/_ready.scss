@@ -1,0 +1,107 @@
+/*ready*/
+.ready{
+    margin-top: 80px;
+}
+.ready__inner{
+    padding-bottom: 80px;
+    margin: 0 auto;
+    max-width: 330px;
+    text-align: center;
+}
+.ready__title{
+    font-family: 'DM Serif Display';
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 36px;
+    letter-spacing: -0.246154px;
+    color: #36536B;
+}
+.ready__email{
+    
+}
+.ready__label{
+    
+}
+.ready__in{
+    padding-left: 25px;
+    width: 300px;
+    height: 48px;
+    font-weight: 700;
+    font-size: 15px;
+    line-height: 18px;
+    color: #36536B;
+    background: #FBFCFE;
+    box-shadow: 10px 10px 25px -10px rgba(54, 83, 107, 0.25);
+    border-radius: 24px;
+    border: none;
+}
+.ready__btn{
+    margin-top: 16px;
+    font-weight: 700;
+    font-size: 15px;
+    line-height: 18px;
+    letter-spacing: -0.115385px;
+    color: #FBFCFE;
+    background: #BA4270;
+    border-radius: 24px;
+    border: none;
+    width: 300px;
+    height: 48px;
+    transition: 0.3s;
+
+    &:hover{
+        background: #DA6D97;
+    }
+}
+
+@include mobile-first (724px){
+    .ready{
+        margin-top: 80px;
+    }
+    .ready__inner{
+        margin: 0 auto;
+        max-width: 440px;
+        text-align: center;
+    }
+    .ready__title{
+        font-family: 'DM Serif Display';
+        font-weight: 400;
+        font-size: 48px;
+        line-height: 56px;
+        letter-spacing: -0.246154px;
+        color: #36536B;
+    }
+    .ready__email{
+        position: relative;
+        display: flex;
+    }
+   
+    .ready__btn{
+        position: absolute;
+        top: -17px;
+        left: 250px;
+        margin-top: 16px;
+        font-weight: 700;
+        font-size: 15px;
+        line-height: 18px;
+        letter-spacing: -0.115385px;
+        color: #FBFCFE;
+        background: #BA4270;
+        border-radius: 24px;
+        border: none;
+        width: 173px;
+        height: 48px;
+    }
+}
+
+@include mobile-first (1000px){
+    .ready__inner{
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        margin: 0 auto;
+        max-width: 100%;
+        text-align: center;
+    }
+    
+}
