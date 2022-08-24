@@ -1198,6 +1198,10 @@ body {
   padding-left: 24px;
 }
 
+.site-footer__icon {
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
 .site-footer__icon:hover {
   fill: #DA6D97;
 }
