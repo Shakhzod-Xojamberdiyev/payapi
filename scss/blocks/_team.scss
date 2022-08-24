@@ -55,6 +55,7 @@ align-items: center;
     .team__img{
         margin-top: 80px;
         width: 100%;
+        height: 350px;
         padding: 150px;
     background-image: url("../images/person.jpg");
     background-repeat: no-repeat;
@@ -86,6 +87,9 @@ align-items: center;
     
 }
 @include mobile-first (1000px){
+    .team__img{
+        height: 500px;
+    }
     .team__num-box{
         padding-top: 0px;
         padding-bottom: 0px;

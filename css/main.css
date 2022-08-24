@@ -1311,6 +1311,7 @@ body {
   .team__img {
     margin-top: 80px;
     width: 100%;
+    height: 350px;
     padding: 150px;
     background-image: url("../images/person.jpg");
     background-repeat: no-repeat;
@@ -1348,6 +1349,9 @@ body {
   }
 }
 @media only screen and (min-width: 1000px) {
+  .team__img {
+    height: 500px;
+  }
   .team__num-box {
     padding-top: 0px;
     padding-bottom: 0px;
