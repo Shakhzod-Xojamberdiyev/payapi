@@ -417,7 +417,7 @@ body {
 }
 
 .site-header__close-btn {
-  top: 48px;
+  top: 59px;
   right: 27px;
   position: absolute;
   background-image: url("../images/icons/close.svg");
@@ -457,6 +457,8 @@ body {
 .site-header__item:last-child .site-header__link {
   display: inline-block;
   padding: 16px 36px;
+  font-size: 15px;
+  line-height: 18px;
   background: #BA4270;
   -webkit-box-shadow: 10px 10px 25px -10px rgba(54, 83, 107, 0.25);
           box-shadow: 10px 10px 25px -10px rgba(54, 83, 107, 0.25);
